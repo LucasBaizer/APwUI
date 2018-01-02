@@ -72,12 +72,12 @@ android {
     // - to support all the arches, we need at least API 21+
     //
     // https://android.googlesource.com/platform/ndk/+/master/docs/user/common_problems.md#target-api-set-higher-than-device-api
-    compileSdkVersion 21
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 21
+        minSdkVersion 15
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         ndk.abiFilters 'x86', 'x86_64', 'armeabi', 'armeabi-v7a', 'arm64-v8a'
