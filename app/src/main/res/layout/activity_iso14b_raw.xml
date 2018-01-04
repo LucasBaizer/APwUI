@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="au.id.micolous.andprox.activities.ui.CommandRootActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="none"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="	Send raw hex data to tag"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/par1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="do not read response"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/par2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="calculate and append CRC"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/par3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="leave the field on after receive"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/par4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="active signal field ON with select"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/par5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="active signal field ON with select for SRx ST Microelectronics tags"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/par6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/execute"
+                android:layout_alignBottom="@+id/execute"
+                android:layout_toLeftOf="@+id/execute"
+                android:layout_toStartOf="@+id/execute"
+                android:digits="0123456789ABCDEF "
+                android:hint="hex"
+                android:inputType="textCapCharacters" />
+
+            <Button
+                android:id="@+id/execute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Execute" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <fragment
+        android:id="@+id/console"
+        android:name="au.id.micolous.andprox.activities.ui.ConsoleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

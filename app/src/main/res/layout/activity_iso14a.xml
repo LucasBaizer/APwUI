@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="au.id.micolous.andprox.activities.ui.CommandRootActivity">
+
+    <TextView
+        android:id="@+id/labelIso14aType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true"
+        android:text="Choose ISO14443A Command Type"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/iso14aList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:text="List"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/iso14aCuids"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:text="CUIDS"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/iso14aSnoop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:text="Snoop"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/iso14aReader"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Reader"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/iso14aSim"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:text="SIM"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/iso14aRaw"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_dark"
+                android:text="Raw"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

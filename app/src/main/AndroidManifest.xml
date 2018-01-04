@@ -78,6 +78,20 @@
             android:name=".hw.TuneResultActivity"
             android:label="Antenna Tuning Result" />
         <activity android:name=".activities.CliActivity" />
+        <activity android:name=".activities.ui.CommandRootActivity" android:parentActivityName=".activities.MainActivity"/>
+        <activity android:name=".activities.ui.hf.HFActivity" android:parentActivityName=".activities.ui.CommandRootActivity"/>
+        <activity android:name=".activities.ui.hf.iso14a.ISO14AActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+
+        <activity android:name=".activities.ui.hf.iso14a.ISO14ASimCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.iso14a.ISO14ASnoopCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.iso.ISOReaderCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.iso.ISOListCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.iso14a.ISO14ARawCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BRawCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+
+        <activity android:name=".activities.ui.hf.iso14a.ISO14ACuidsCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+
         <activity android:name=".activities.SysInfoActivity" />
         <activity
             android:name=".activities.AboutActivity"

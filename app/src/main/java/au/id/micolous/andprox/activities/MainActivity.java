@@ -34,6 +34,7 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
+import android.app.TaskStackBuilder;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -65,6 +66,7 @@ import java.util.Locale;
 
 import au.id.micolous.andprox.AndProxApplication;
 import au.id.micolous.andprox.R;
+import au.id.micolous.andprox.activities.ui.CommandRootActivity;
 import au.id.micolous.andprox.natives.NativeSerialWrapper;
 import au.id.micolous.andprox.natives.Natives;
 import au.id.micolous.andprox.natives.Resources;
@@ -239,8 +241,8 @@ public class MainActivity extends AppCompatActivity {
         Natives.initProxmark();
         Natives.unsetSerialPort();
 
-        Intent intent = new Intent(MainActivity.this, CliActivity.class);
-        startActivity(intent);
+        TaskStackBuilder.create(this).addNextIntentWithParentStack(new Intent(this, CommandRootActivity.class)).startActivities();
+        //TaskStackBuilder.create(this).addNextIntentWithParentStack(new Intent(this, CliActivity.class)).startActivities();
         finish();
     }
 

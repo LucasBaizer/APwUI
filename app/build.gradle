@@ -65,7 +65,7 @@ android {
         applicationId "au.id.micolous.andprox"
         // Must be at least the API version declared by all dependencies
         // Highest is natives @ API 21+
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode getVersionCode()
         versionName getVersionName()
@@ -106,6 +106,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(path: ':natives')
 }
+
+
 
 
 
