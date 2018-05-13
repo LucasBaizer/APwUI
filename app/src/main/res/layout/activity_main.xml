@@ -62,11 +62,11 @@
             android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
         <Button
+            android:id="@+id/btnOfflineMode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/offline_mode"
             android:onClick="btnOfflineMode"
-            android:id="@+id/btnOfflineMode" />
+            android:text="@string/offline_mode" />
 
         <Button
             android:id="@+id/btnSysInfoMain"
@@ -81,6 +81,12 @@
             android:layout_height="wrap_content"
             android:onClick="btnAbout"
             android:text="@string/about_andprox_btn" />
+
+        <Button
+            android:id="@+id/cliMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLI Mode: Off" />
 
     </LinearLayout>
 </RelativeLayout>

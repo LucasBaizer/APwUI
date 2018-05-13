@@ -51,6 +51,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -77,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String ACTION_USB_PERMISSION = "au.id.micolous.andprox.USB_PERMISSION";
     private static final String ACTION_USB_PERMISSION_AUTOCONNECT = "au.id.micolous.andprox.USB_PERMISSION_AUTOCONNECT";
     private static final int STORAGE_PERMISSION_CALLBACK = 1001;
+
+    private boolean isCliMode = false;
 
     private final BroadcastReceiver mUsbReceiver = new BroadcastReceiver() {
         @Override
@@ -137,6 +140,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button mode = findViewById(R.id.cliMode);
+        mode.setOnClickListener((e) -> {
+            isCliMode = !isCliMode;
+            mode.setText("CLI Mode: " + (isCliMode ? "On" : "Off"));
+            Log.d("LucasHack", "Is CLI Mode: " + isCliMode);
+        });
 
         if (AndProxApplication.hasUsbHostSupport()) {
             UsbManager manager = (UsbManager) getSystemService(Context.USB_SERVICE);
@@ -241,7 +251,7 @@ public class MainActivity extends AppCompatActivity {
         Natives.initProxmark();
         Natives.unsetSerialPort();
 
-        TaskStackBuilder.create(this).addNextIntentWithParentStack(new Intent(this, CommandRootActivity.class)).startActivities();
+        TaskStackBuilder.create(this).addNextIntentWithParentStack(new Intent(this, isCliMode ? CliActivity.class : CommandRootActivity.class)).startActivities();
         //TaskStackBuilder.create(this).addNextIntentWithParentStack(new Intent(this, CliActivity.class)).startActivities();
         finish();
     }
@@ -420,7 +430,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.show();
             } else if (result.success) {
                 // Start main activity, yay!
-                Intent intent = new Intent(MainActivity.this, CliActivity.class);
+                Intent intent = new Intent(MainActivity.this, isCliMode ? CliActivity.class : CommandRootActivity.class);
                 //intent.putExtra(HomeActivity.HWINFO_PARCEL_KEY, result.hwinfo);
                 startActivity(intent);
                 finish();

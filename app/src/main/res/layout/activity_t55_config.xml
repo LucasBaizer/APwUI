@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="au.id.micolous.andprox.activities.ui.CommandRootActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="none"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Set/Get T55XX configuration"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/par1Box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set bitrate"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/par1Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:enabled="false"
+                android:clickable="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/par2Box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set demodulation"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/par2Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:clickable="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/par3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="invert data signal"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/par4Box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="set offset"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/par4Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:digits="0123456789"
+                android:enabled="false"
+                android:hint="offset"
+                android:inputType="textCapCharacters"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/par5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/awidClonePar2"
+            android:text="clone to Q5 (T5555) instead of T55x7 chip"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/par6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/awidClonePar2"
+            android:text="enable sequence terminator"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/execute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Execute" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <fragment
+        android:id="@+id/console"
+        android:name="au.id.micolous.andprox.activities.ui.ConsoleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

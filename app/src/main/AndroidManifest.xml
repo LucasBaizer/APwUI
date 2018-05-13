@@ -81,16 +81,41 @@
         <activity android:name=".activities.ui.CommandRootActivity" android:parentActivityName=".activities.MainActivity"/>
         <activity android:name=".activities.ui.hf.HFActivity" android:parentActivityName=".activities.ui.CommandRootActivity"/>
         <activity android:name=".activities.ui.hf.iso14a.ISO14AActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.iso14a.ISO14ASnoopCommandActivity" android:parentActivityName=".activities.ui.hf.iso14a.ISO14AActivity"/>
+        <activity android:name=".activities.ui.hf.iso14a.ISO14ASimCommandActivity" android:parentActivityName=".activities.ui.hf.iso14a.ISO14AActivity"/>
+        <activity android:name=".activities.ui.hf.iso14a.ISO14ARawCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14a.ISO14AActivity"/>
+        <activity android:name=".activities.ui.hf.iso14a.ISO14ACuidsCommandActivity" android:parentActivityName=".activities.ui.hf.iso14a.ISO14AActivity"/>
+        <activity android:name=".activities.ui.hf.iso14a.ISO14AReaderCommandActivity" android:parentActivityName=".activities.ui.hf.iso14a.ISO14AActivity"/>
         <activity android:name=".activities.ui.hf.iso14b.ISO14BActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
-
-        <activity android:name=".activities.ui.hf.iso14a.ISO14ASimCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
-        <activity android:name=".activities.ui.hf.iso14a.ISO14ASnoopCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
-        <activity android:name=".activities.ui.hf.iso.ISOReaderCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
-        <activity android:name=".activities.ui.hf.iso.ISOListCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
-        <activity android:name=".activities.ui.hf.iso14a.ISO14ARawCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.HFActivity"/>
-        <activity android:name=".activities.ui.hf.iso14b.ISO14BRawCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.HFActivity"/>
-
-        <activity android:name=".activities.ui.hf.iso14a.ISO14ACuidsCommandActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BRawCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BSimCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BSnoopCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BReaderCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BInfoCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BSri512ReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BSriX4KReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
+        <activity android:name=".activities.ui.hf.iso14b.ISO14BSriWriteCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
+        <activity android:name=".activities.ui.hf.iso.ISOListCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.lf.LFActivity" android:parentActivityName=".activities.ui.CommandRootActivity"/>
+        <activity android:name=".activities.ui.lf.awid.AWIDActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.LFActivity"/>
+        <activity android:name=".activities.ui.lf.awid.AWIDDemodCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.awid.AWIDActivity"/>
+        <activity android:name=".activities.ui.lf.awid.AWIDReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.awid.AWIDActivity"/>
+        <activity android:name=".activities.ui.lf.awid.AWIDSimCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.awid.AWIDActivity"/>
+        <activity android:name=".activities.ui.lf.awid.AWIDCloneCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.awid.AWIDActivity"/>
+        <activity android:name=".activities.ui.lf.t55.T55Activity" android:parentActivityName=".activities.ui.lf.LFActivity"/>
+        <activity android:name=".activities.ui.lf.t55.T55BruteforceCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55ConfigCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55DetectCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55P1DetectCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55ResetreadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55SpecialCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55DumpCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55InfoCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55WakeupCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55WipeCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55ReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55TraceCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
+        <activity android:name=".activities.ui.lf.t55.T55WriteCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
 
         <activity android:name=".activities.SysInfoActivity" />
         <activity

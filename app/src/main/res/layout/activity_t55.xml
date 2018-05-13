@@ -8,30 +8,18 @@
     android:orientation="vertical"
     tools:context="au.id.micolous.andprox.activities.ui.CommandRootActivity">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/labelIAwidType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true"
+        android:text="Choose T55XX Command Type"
+        android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/labelRfidType"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="5dp"
-            android:ems="10"
-            android:singleLine="true"
-            android:text="Choose RFID Type"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/buttonSearchRfidType"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Search"
-            android:textSize="12dp" />
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,102 +30,159 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="4">
+            android:weightSum="7">
 
             <Button
-                android:id="@+id/hfButton14a"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:background="@android:color/holo_green_light"
-                android:text="ISO14443A"
-                android:textSize="32sp"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="0dp" />
-
-            <Button
-                android:id="@+id/hfButton15"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:background="@android:color/holo_red_light"
-                android:text="ISO15693"
-                android:textSize="32sp"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="0dp" />
-
-            <Button
-                android:id="@+id/hfButtonLegic"
+                android:id="@+id/t55Bruteforce"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
-                android:text="LEGIC"
+                android:text="Bruteforce"
+                android:textSize="28sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Detect"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:text="Detect"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
 
             <Button
-                android:id="@+id/hfButtonMf"
+                android:id="@+id/t55Read"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:text="Read"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Write"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:text="Write"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:text="Info"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Special"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_light"
-                android:text="MIFARE"
+                android:text="Special"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Wipe"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:text="Wipe"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="4">
+            android:weightSum="7">
 
             <Button
-                android:id="@+id/hfButton14b"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:background="@android:color/holo_green_dark"
-                android:text="ISO14443B"
-                android:textSize="32sp"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="0dp" />
-
-            <Button
-                android:id="@+id/hfButtonEpa"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:background="@android:color/holo_red_dark"
-                android:text="EPA"
-                android:textSize="32sp"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="0dp" />
-
-            <Button
-                android:id="@+id/hfButtonIclass"
+                android:id="@+id/t55Config"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_dark"
-                android:text="ICLASS"
+                android:text="Config"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
 
             <Button
-                android:id="@+id/hfButtonMfu"
+                android:id="@+id/t55P1Detect"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_dark"
-                android:text="MIFARE UL"
+                android:text="P1 Detect"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Resetread"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_dark"
+                android:text="Reset Read"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Trace"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_dark"
+                android:text="Trace"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Dump"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Dump"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/t55Wakeup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Wakeup"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

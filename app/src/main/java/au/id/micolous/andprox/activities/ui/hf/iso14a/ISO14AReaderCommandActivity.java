@@ -1,4 +1,4 @@
-package au.id.micolous.andprox.activities.ui.hf.iso;
+package au.id.micolous.andprox.activities.ui.hf.iso14a;
 
 import android.os.Bundle;
 
@@ -8,14 +8,14 @@ import au.id.micolous.andprox.activities.ui.CommandActivity;
 import au.id.micolous.andprox.activities.ui.ConsoleFragment;
 import au.id.micolous.andprox.activities.ui.UI;
 
-public class ISOReaderCommandActivity extends CommandActivity {
+public class ISO14AReaderCommandActivity extends CommandActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iso_reader);
+        setContentView(R.layout.activity_iso14a_reader);
 
         findViewById(R.id.execute).setOnClickListener((e) -> {
-            String cmd = "hf " + UI.getRFIDType() + " reader";
+            String cmd = "hf 14a reader";
             if(isChecked(R.id.par1)) {
                 cmd += " -k";
             }

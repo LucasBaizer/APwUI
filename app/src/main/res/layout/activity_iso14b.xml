@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="3">
+            android:weightSum="5">
 
             <Button
                 android:id="@+id/iso14bList"
@@ -44,12 +44,12 @@
                 tools:layout_editor_absoluteY="0dp" />
 
             <Button
-                android:id="@+id/iso14bCuids"
+                android:id="@+id/iso14bInfo"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
-                android:text="SRI"
+                android:text="Info"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -64,13 +64,35 @@
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/iso14bSriX4KRead"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:text="SRIX4KRead"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/iso14bSriWrite"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:text="SRIWRITE"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="3">
+            android:weightSum="5">
 
             <Button
                 android:id="@+id/iso14bReader"
@@ -102,6 +124,17 @@
                 android:background="@android:color/holo_red_dark"
                 android:text="Raw"
                 android:textSize="32sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/iso14bSri512Read"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:text="SRI512READ"
+                android:textSize="30sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
         </LinearLayout>

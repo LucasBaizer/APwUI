@@ -16,7 +16,7 @@ public class ISO14ASimCommandActivity extends CommandActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iso14a_sim);
 
-        Spinner spinner = findViewById((R.id.iso14aSimPar1));
+        Spinner spinner = findViewById((R.id.par1Spinner));
 
         String[] items = new String[] { "MIFARE Classic", "MIFARE Ultralight", "MIFARE Desfire", "ISO/IEC 14443-4", "MIFARE Tnp3xxx" };
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
