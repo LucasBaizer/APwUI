@@ -115,7 +115,6 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_light"
                 android:text="NexWatch"
-                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />

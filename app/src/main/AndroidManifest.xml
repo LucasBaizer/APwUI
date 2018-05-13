@@ -109,6 +109,9 @@
         <activity android:name=".activities.ui.lf.io.IODemodCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.io.IOActivity"/>
         <activity android:name=".activities.ui.lf.io.IOReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.io.IOActivity"/>
         <activity android:name=".activities.ui.lf.io.IOCloneCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.io.IOActivity"/>
+        <activity android:name=".activities.ui.lf.nexwatch.NexWatchActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.LFActivity"/>
+        <activity android:name=".activities.ui.lf.nexwatch.NexWatchDemodCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.nexwatch.NexWatchActivity"/>
+        <activity android:name=".activities.ui.lf.nexwatch.NexWatchReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.nexwatch.NexWatchActivity"/>
         <activity android:name=".activities.ui.lf.t55.T55Activity" android:parentActivityName=".activities.ui.lf.LFActivity"/>
         <activity android:name=".activities.ui.lf.t55.T55BruteforceCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
         <activity android:name=".activities.ui.lf.t55.T55ConfigCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>

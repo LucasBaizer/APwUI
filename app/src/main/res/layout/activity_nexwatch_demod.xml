@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="au.id.micolous.andprox.activities.ui.CommandRootActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="none"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Demodulate NexWatch tag from GraphBuffer"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <fragment android:name="au.id.micolous.andprox.activities.ui.ConsoleFragment"
+        android:id="@+id/console"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
