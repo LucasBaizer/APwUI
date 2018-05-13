@@ -96,6 +96,9 @@
         <activity android:name=".activities.ui.hf.iso14b.ISO14BSriX4KReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
         <activity android:name=".activities.ui.hf.iso14b.ISO14BSriWriteCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.iso14b.ISO14BActivity"/>
         <activity android:name=".activities.ui.hf.iso.ISOListCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.epa.EPAActivity" android:parentActivityName=".activities.ui.hf.HFActivity"/>
+        <activity android:name=".activities.ui.hf.epa.EPACNoncesCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.epa.EPAActivity"/>
+        <activity android:name=".activities.ui.hf.epa.EPAPReplayCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.hf.epa.EPAActivity"/>
         <activity android:name=".activities.ui.lf.LFActivity" android:parentActivityName=".activities.ui.CommandRootActivity"/>
         <activity android:name=".activities.ui.lf.awid.AWIDActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.LFActivity"/>
         <activity android:name=".activities.ui.lf.awid.AWIDDemodCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.awid.AWIDActivity"/>
