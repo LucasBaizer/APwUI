@@ -8,6 +8,7 @@ import au.id.micolous.andprox.activities.ui.UI;
 import au.id.micolous.andprox.activities.ui.hf.iso14a.ISO14AActivity;
 import au.id.micolous.andprox.activities.ui.hf.iso14b.ISO14BActivity;
 import au.id.micolous.andprox.activities.ui.lf.awid.AWIDActivity;
+import au.id.micolous.andprox.activities.ui.lf.io.IOActivity;
 import au.id.micolous.andprox.activities.ui.lf.t55.T55Activity;
 
 public class LFActivity extends ButtonListActivity {
@@ -18,6 +19,9 @@ public class LFActivity extends ButtonListActivity {
 
         setActivity(R.id.lfButtonAwid, AWIDActivity.class, () -> {
             UI.setRFIDType("awid");
+        });
+        setActivity(R.id.lfButtonIo, IOActivity.class, () -> {
+            UI.setRFIDType("io");
         });
         setActivity(R.id.lfButtonT55xx, T55Activity.class, () -> {
             UI.setRFIDType("t55xx");
