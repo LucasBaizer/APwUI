@@ -15,7 +15,7 @@ public class CommandRootActivity extends ButtonListActivity {
 
         setActivity(R.id.hfRootButton, HFActivity.class);
         setActivity(R.id.lfRootButton, LFActivity.class);
-        setActivity(R.id.hwRootButton, HFActivity.class);
+        // setActivity(R.id.hwRootButton, HardwareActivity.class);
 
         Natives.registerPrintAndLogHandler((log) -> {
             runOnUiThread(() -> ConsoleFragment.append(log + "\n"));

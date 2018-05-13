@@ -51,6 +51,7 @@
             android:layout_weight="1"
             android:background="@android:color/holo_blue_dark"
             android:text="Hardware"
+            android:enabled="false"
             android:textSize="42sp"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="0dp" />

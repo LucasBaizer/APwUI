@@ -64,6 +64,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_light"
                 android:text="EM4X"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -75,6 +76,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
                 android:text="LEGIC"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp"
@@ -87,6 +89,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_light"
                 android:text="Hitag"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -98,6 +101,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_green_light"
                 android:text="INDALA"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -109,6 +113,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_light"
                 android:text="NexWatch"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -120,6 +125,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
                 android:text="Paradox"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -131,6 +137,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_light"
                 android:text="Presco"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -142,6 +149,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_green_light"
                 android:text="Secureakey"
+                android:enabled="false"
                 android:textSize="26sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -153,6 +161,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_light"
                 android:text="TI"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -164,6 +173,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
                 android:text="Visa2000"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -184,6 +194,7 @@
                 android:background="@android:color/holo_green_dark"
                 android:text="COTAG"
                 android:textSize="32sp"
+                android:enabled="false"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
 
@@ -194,6 +205,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_dark"
                 android:text="FDX-B"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -205,6 +217,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_dark"
                 android:text="HID"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -216,6 +229,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_dark"
                 android:text="ioProx"
+                android:enabled="false"
                 android:textSize="32sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -227,6 +241,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_green_dark"
                 android:text="JABLOTRON"
+                android:enabled="false"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -238,6 +253,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_dark"
                 android:text="Noralsy"
+                android:enabled="false"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -249,6 +265,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_dark"
                 android:text="PCF7931"
+                android:enabled="false"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -260,6 +277,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_dark"
                 android:text="Pyramid"
+                android:enabled="false"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
@@ -282,6 +300,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_dark"
                 android:text="Viking"
+                android:enabled="false"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="0dp" />
