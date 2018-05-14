@@ -11,7 +11,7 @@ public class ParadoxDemodCommandActivity extends CommandActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_paradox_demod);
+        setContentView(R.layout.activity_securakey_demod);
 
         String cmd = "lf paradox demod";
         ConsoleFragment.appendCommand(cmd);

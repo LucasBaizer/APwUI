@@ -11,6 +11,7 @@ import au.id.micolous.andprox.activities.ui.lf.awid.AWIDActivity;
 import au.id.micolous.andprox.activities.ui.lf.io.IOActivity;
 import au.id.micolous.andprox.activities.ui.lf.nexwatch.NexWatchActivity;
 import au.id.micolous.andprox.activities.ui.lf.paradox.ParadoxActivity;
+import au.id.micolous.andprox.activities.ui.lf.securakey.SecurakeyActivity;
 import au.id.micolous.andprox.activities.ui.lf.t55.T55Activity;
 
 public class LFActivity extends ButtonListActivity {
@@ -30,6 +31,9 @@ public class LFActivity extends ButtonListActivity {
         });
         setActivity(R.id.lfButtonParadox, ParadoxActivity.class, () -> {
             UI.setRFIDType("paradox");
+        });
+        setActivity(R.id.lfButtonSecurakey, SecurakeyActivity.class, () -> {
+            UI.setRFIDType("securakey");
         });
         setActivity(R.id.lfButtonT55xx, T55Activity.class, () -> {
             UI.setRFIDType("t55xx");

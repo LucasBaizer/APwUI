@@ -115,6 +115,9 @@
         <activity android:name=".activities.ui.lf.paradox.ParadoxActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.LFActivity"/>
         <activity android:name=".activities.ui.lf.paradox.ParadoxDemodCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.paradox.ParadoxActivity"/>
         <activity android:name=".activities.ui.lf.paradox.ParadoxReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.paradox.ParadoxActivity"/>
+        <activity android:name=".activities.ui.lf.securakey.SecurakeyActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.LFActivity"/>
+        <activity android:name=".activities.ui.lf.securakey.SecurakeyDemodCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.securakey.SecurakeyActivity"/>
+        <activity android:name=".activities.ui.lf.securakey.SecurakeyReadCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.securakey.SecurakeyActivity"/>
         <activity android:name=".activities.ui.lf.t55.T55Activity" android:parentActivityName=".activities.ui.lf.LFActivity"/>
         <activity android:name=".activities.ui.lf.t55.T55BruteforceCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
         <activity android:name=".activities.ui.lf.t55.T55ConfigCommandActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:parentActivityName=".activities.ui.lf.t55.T55Activity"/>
